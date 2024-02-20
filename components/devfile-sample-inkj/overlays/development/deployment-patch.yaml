@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-inkj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0069-tenant/tkrw-pr714-0075-0069-app/devfile-sample-inkj@sha256:913676a8f6149c9af2a97bc004e8442a7dd5d1c1fda4a2ff5a7cefe5cde9f3aa
+        name: my-nodejs
+        resources: {}
+status: {}
